@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
     background-color: #fff; /* White background */
     color: #333; /* Dark Gray text color */
     display: flex;
@@ -10,6 +10,48 @@ body {
 
 a:visited {
     color: #006699; /* Don't change link color after visiting */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 200
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem
+}
+
+h2 {
+    font-size: 2.6rem;
+    line-height: 1.25;
+    letter-spacing: -.1rem
+}
+
+h3 {
+    font-size: 2.6rem;
+    line-height: 1.3;
+    letter-spacing: -.1rem
+}
+
+h4 {
+    font-size: 2.0rem;
+    line-height: 1.35;
+    letter-spacing: -.08rem
+}
+
+h5 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem
+}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0
 }
 
 .header {
@@ -89,6 +131,46 @@ a:visited {
     position: relative; /* Add relative positioning to allow absolute positioning of the navigation */
 }
 
+/* Modifications for mobile devices */
+@media (max-width: 400px) {
+    .container {
+        width:90%;
+        padding: 0
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        width:90%
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size:2.5rem
+    }
+
+    h2 {
+        font-size: 2.5rem
+    }
+
+    h3 {
+        font-size: 2.0rem
+    }
+
+    h4 {
+        font-size: 1.5rem
+    }
+
+    h5 {
+        font-size: 1.5rem
+    }
+
+    h6 {
+        font-size: 1.5rem
+    }
+}
+
 .timeline {
     padding: 1.25rem;
     position: relative; /* Add relative positioning to the timeline container */
@@ -115,16 +197,22 @@ a:visited {
 
 .timeline-content {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    font-size: 1.125rem;
-    line-height: 1.5;
-    margin-left: 1.875rem; /* Adjust as needed for the desired distance from the timeline */
+    align-items: flex-start; /* Align items vertically to top */
+    margin-left: 1.5rem; /* Adjust as needed for the desired distance from the timeline */
     margin-top: 1.875rem;
 }
 
 .company-logo {
-    max-width: 6.25rem; /* Adjust as needed for the desired size */
-    margin-right: 1.875rem; /* Adjust as needed for the space between logo and text */
+    max-width: 80px; /* Adjust as needed for the desired size */
+    margin-right: 1.5rem; /* Adjust as needed for the space between logo and text */
+    width: 100%;
+}
+
+@media (max-width: 550px) {
+    .company-logo {
+        max-width: 40px;
+        margin-right: 0.5rem;
+    }
 }
 
 .info {
@@ -176,7 +264,6 @@ a:visited {
 
 .project-text {
     color: #555; /* Dark Gray */
-    line-height: 1.25;
 }
 
 .project-link {
