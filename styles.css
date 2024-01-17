@@ -1,0 +1,201 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark Gray text color */
+    display: flex;
+    flex-direction: column; /* Make sure the main container is below the navigation */
+}
+
+a:visited {
+    color: #006699; /* Don't change link color after visiting */
+}
+
+.header {
+    background-color: #fff; /* White header background */
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.header .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    max-width: 12.5rem; /* Adjust as needed */
+    border-radius: 1.25rem; /* Make the image circular */
+    margin-right: 1.25rem; /* Adjust margin to create space between profile picture and text */
+}
+
+.text-info {
+    text-align: center; /* Center the text within the profile container */
+}
+
+.header h1 {
+    color: #333; /* Dark Gray text color */
+    margin: 0.625rem 0;
+}
+
+.icons {
+    margin-top: 1.25rem;
+}
+
+.icons a {
+    margin-right: 0.625rem;
+    color: #006699; /* Dark Gray icon color */
+}
+
+.description {
+    color: #333; /* Dark Gray text color */
+    margin-bottom: 1.25rem;
+}
+
+.navigation {
+    background-color: #fff; /* White background for navigation */
+    border-top: 0.0625rem solid #ddd; /* Light Gray top border */
+    border-bottom: 0.0625rem solid #ddd; /* Light Gray bottom border */
+    padding: 1.25rem;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+.navigation li {
+    margin-left: 1.25rem; /* Adjust margin to create space between menu items */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333; /* Dark Gray text color */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 50rem; /* Adjust maximum width as needed */
+    margin: 0 auto;
+    position: relative; /* Add relative positioning to allow absolute positioning of the navigation */
+}
+
+.timeline {
+    padding: 1.25rem;
+    position: relative; /* Add relative positioning to the timeline container */
+}
+
+.timeline h1 {
+    color: #006699;
+}
+
+.node {
+    position: relative; /* Add relative positioning to the node container */
+    margin-bottom: 1.25rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0.3125rem; /* Adjust as needed for the desired distance from the timeline */
+    top: 0;
+    bottom: 0;
+    width: 0.125rem;
+    background-color: #006699; /* Navy Blue */
+    z-index: 0; /* Ensure the line appears below the circle */
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-left: 1.875rem; /* Adjust as needed for the desired distance from the timeline */
+    margin-top: 1.875rem;
+}
+
+.company-logo {
+    max-width: 6.25rem; /* Adjust as needed for the desired size */
+    margin-right: 1.875rem; /* Adjust as needed for the space between logo and text */
+}
+
+.info {
+    flex-grow: 1; /* Allow the info section to grow and take available space */
+}
+
+.timeline-content h2 {
+    font-size: 1.5rem;
+    color: #555; 
+    margin: 0 0 0.3125rem 0; /* Adjust as needed for the spacing between company name and time */
+}
+
+.time {
+    color: #666; /* Medium Gray */
+    margin-bottom: 0.3125rem; /* Adjust as needed for the spacing between time and description */
+}
+
+/* Horizontal Ruler */
+.section-divider {
+    border-color: #ddd; /* Light Gray */
+    margin-top: 20px;
+}
+
+/* Projects Section */
+.projects h1 {
+    color: #006699;
+}
+
+.project {
+    margin-bottom: 1.875rem; /* Adjust spacing between projects */
+}
+
+.project h2 {
+    font-size: 1.25rem;
+    color: #333; /* Dark Gray text color */
+    margin-bottom: 0.625rem;
+}
+
+.project img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    border-radius: 0.5rem; /* Add border radius for a rounded appearance */
+    margin-bottom: 0.625rem;
+}
+
+.image-caption {
+    margin-top: 0.625rem; /* Adjust as needed for the space between image and caption */
+    color: #666; /* Medium Gray */
+}
+
+.project-text {
+    color: #555; /* Dark Gray */
+    line-height: 1.25;
+}
+
+.project-link {
+    display: inline;
+    margin-top: 0.625rem; /* Adjust as needed for the space between text and link */
+    color: #006699; /* Navy Blue */
+    text-decoration: none;
+    border-bottom: 1px solid #eee; /* Light Gray underline */
+}
+
+/* Blog Section */
+.writing {
+    color: #006699;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff; /* White */
+    color: #006699; /* Navy Blue */
+}

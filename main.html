@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew P Chang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <!-- Add any additional stylesheets or font-awesome links here -->
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header Section (Your Name, Profile Picture, Description, and Font Awesome Icons) -->
+        <header class="header">
+            <div class="profile">
+                <img src="img/mattchang_headshot.jpg" alt="" class="profile-picture">
+                <div class="text-info">
+                    <h1>Matthew Chang</h1>
+                    <p class="description">Semiconductor Chip Designer <i class="fas fa-arrow-right"></i> Machine Learning</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/changmp/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mpchang"><i class="fab fa-github"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=jJyxJ48AAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:mpchang17@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="docs/MattChang_SiPh_resume_09272023.pdf">Resume</a></li>
+            </ul>
+        </nav>
+
+        <!-- Timeline Section -->
+        <section class="timeline">
+            <h1>Work Experience</h1>
+            <div class="node">
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <img src="img/luminous_logo.png" alt="Luminous Computing" class="company-logo">
+                    <div class="info">
+                        <h2>Luminous Computing</h2>
+                        <p class="time">05/2019 - 05/2023</p>
+                        <p class="description">I was employee #5, and led the photonics team at Luminous Computing. Our team delivered the <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-15-24926&id=532701">first monolithically integrated 112 Gbps PAM4 transceiver chips</a>, fabricated in the <a href="https://gf.com/technology-platforms/silicon-photonics/"">300mm GlobalFoundries Fotonix platform.</a> I helped build the design software infrastructure (simulation, layout, integration), the lab (including a home-grown 300mm wafer tester), and a team of 9 engineers from scratch. I also owned the key relationships with our photonics foundry partners (GlobalFoundries, SilTerra) and equipment vendors. The photonics IP lives on today at <a href="https://www.enosemi.com/">Enosemi.</a></p>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <img src="img/apple_logo.png" alt="Apple" class="company-logo">
+                    <div class="info">
+                        <h2>Apple</h2>
+                        <p class="time">06/2017 - 05/2019</p>
+                        <p class="description">I joined the wireless design team at Apple and helped reduce multi-radio coexistence interference in the Apple Watch Series 3 and 4 using both hardware and software techniques. I built and maintained the automation software for in-factory testing of every wireless protocol used in those watches.</p>
+                    </div>
+                </div>
+                <div class="timeline-content">
+                    <img src="img/princeton_logo.svg" alt="Princeton" class="company-logo">
+                    <div class="info">
+                        <h2>PhD</h2>
+                        <p class="time">2011 - 2017</p>
+                        <p class="description">I received my PhD from the <a href="https://prucnal.princeton.edu/">Lightwave Lab</a> at Princeton University, with a research focus on building photonic integrated circuits for ultra wideband wireless signal processing.
+                            For my thesis, I designed the first <a href="https://ieeexplore.ieee.org/abstract/document/7913712">integrated circuit that reduced wireless interference over 1000x over every LTE channel</a> in existence at the time, using analog interference cancellation. 
+                            The research attracted significant attention, and I co-founded a startup company called Rebeless to commercialize the technology. The company was not successful, and it shut down in 2017.
+
+                            At Princeton, I was a recipient of the <a href="https://ndseg.org/about">National Defense Science and Engineering Graduate Fellowship</a> and the <a href="https://gradschool.princeton.edu/financial-support/fellowships/princeton-fellowships/gordon-wu-fellowship">Gordon Wu Fellowship</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Ruler -->
+        <hr class="section-divider">
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h1>Projects</h1>
+            <!-- Two-column layout for projects -->
+            <div class="project">
+                <h2>Uncovering Missed Tackle Opportunities</h2>
+                <img src="img/play_with_tackle_prob_2022110700_2902.gif" alt="Tackle Probability Model">
+                <p class="project-text">Every year the NFL hosts a competition to develop new models and metrics to improve football analytics. Our team's submission contained three new metrics: tackle opportunity rate, missed opportunity rate, and tackle conversion rate. 
+                    Compared to the traditional metric of total tackle count, tackle opportunity and tackle conversion rate allow us to shed insight on how defenders are actually <i>earning</i> their tackles. Meanwhile, the missed opportunity metric measures something that 
+                    traditional metrics do not capture at all. To compute these metrics, we built a machine learning model that predicts, in real-time, the tackle probability of every defender on the field given player tracking data.
+                </p>
+                <div class="project-links">
+                    <a href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2024/overview" class="project-link"><i class="fas fa-football"></i> NFL Big Data Bowl 2024</a>  |
+                    <a href="https://www.kaggle.com/code/matthewpchang/uncovering-missed-tackle-opportunities" class="project-link"><i class="fas fa-file-alt"></i> Full Report</a>   |
+                    <a href="https://github.com/mpchang/uncovering-missed-tackle-opportunities" class="project-link"><i class="fab fa-github"></i> Code</a>  
+                </div> 
+            </div>
+        </section>
+
+        <!-- Horizontal Ruler -->
+        <hr class="section-divider">
+
+        <!-- Writing Section -->
+        <section class="writing">
+            <h1>Writing</h1>
+            <div class="project">
+                <p class="project-text"><a href="">Making the Leap from Hardware to Software Part 1: Why make the change?</a></p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Matt Chang. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
