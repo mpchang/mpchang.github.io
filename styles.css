@@ -246,7 +246,7 @@ h6 {
 }
 
 .project h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #333; /* Dark Gray text color */
     margin-bottom: 0.625rem;
 }
@@ -255,6 +255,11 @@ h6 {
     max-width: 100%; /* Make sure the image doesn't exceed the container width */
     border-radius: 0.5rem; /* Add border radius for a rounded appearance */
     margin-bottom: 0.625rem;
+}
+
+/* Center only the images */
+.project .center-image {
+    text-align: center;
 }
 
 .image-caption {
