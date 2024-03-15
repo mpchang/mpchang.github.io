@@ -245,6 +245,10 @@ h6 {
     margin-bottom: 1.875rem; /* Adjust spacing between projects */
 }
 
+.project a {
+    color: #006699;/* Link Color */
+}
+
 .project h2 {
     font-size: 1.5rem;
     color: #333; /* Dark Gray text color */
