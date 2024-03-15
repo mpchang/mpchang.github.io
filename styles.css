@@ -8,6 +8,10 @@ body {
     flex-direction: column; /* Make sure the main container is below the navigation */
 }
 
+a {
+    color: #006699  /* Link color */
+}
+
 a:visited {
     color: #006699; /* Don't change link color after visiting */
 }
@@ -243,10 +247,6 @@ h6 {
 
 .project {
     margin-bottom: 1.875rem; /* Adjust spacing between projects */
-}
-
-.project a {
-    color: #006699;/* Link Color */
 }
 
 .project h2 {
