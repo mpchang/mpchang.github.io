@@ -257,9 +257,7 @@
                         </div>
                     </div>
                     <div class="timeline-content">
-                        <p>I develop agentic AI tools that help developers write code faster and more efficiently. Specifically,
-                            I work on backend systems that extract the best context from a user's codebase, feeding it to Codeium's custom LLMs to generate code that best meets the user's query. Our backend systems are used in all of Codeium's products.
-                        </p>
+                        <p>At Codeium, I work on Cascade, the world's first agentic AI pair programmer that can research and directly edit a codebase.</p>
                     </div>
                 </div>
 
@@ -382,5 +380,49 @@
 
     <script src="js/main.js"></script>
     <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+    <script>
+        // Email copy functionality
+        const emailBtn = document.querySelector('.copy-email');
+        const email = 'mpchang17@gmail.com';
+        let tooltipTimeout;
+        let tooltip;
+
+        function createTooltip(text, x, y) {
+            if (tooltip) tooltip.remove();
+            tooltip = document.createElement('div');
+            tooltip.className = 'email-tooltip';
+            tooltip.textContent = text;
+            tooltip.style.left = x + 'px';
+            tooltip.style.top = y + 'px';
+            document.body.appendChild(tooltip);
+            return tooltip;
+        }
+
+        function removeTooltip() {
+            if (tooltip) {
+                tooltip.style.opacity = '0';
+                setTimeout(() => tooltip.remove(), 200);
+            }
+        }
+
+        emailBtn.addEventListener('click', async (e) => {
+            const rect = emailBtn.getBoundingClientRect();
+            const x = rect.left + (rect.width / 2) - 50;
+            const y = rect.bottom + 10;
+
+            try {
+                await navigator.clipboard.writeText(email);
+                createTooltip('Email copied!', x, y);
+            } catch (err) {
+                createTooltip('Failed to copy', x, y);
+            }
+
+            clearTimeout(tooltipTimeout);
+            tooltipTimeout = setTimeout(removeTooltip, 2000);
+        });
+
+        // Remove tooltip when scrolling
+        window.addEventListener('scroll', removeTooltip);
+    </script>
 </body>
 </html>
