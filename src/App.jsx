@@ -6,9 +6,13 @@ import Writing from './components/Writing';
 import Footer from './components/Footer';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import usePageTracking from './hooks/usePageTracking';
 import './index.css';
 
 const App = () => {
+  // Enable Google Analytics page tracking
+  usePageTracking();
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
