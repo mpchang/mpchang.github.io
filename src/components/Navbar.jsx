@@ -57,22 +57,22 @@ const Navbar = () => {
                         className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm"
                     >
                         <div className="max-w-7xl mx-auto px-6">
-                            <div className="flex items-center justify-between h-10">
+                            <div className="flex items-center justify-between h-20">
                                 {/* Logo/Name */}
                                 <button
                                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                                    className="text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-colors"
+                                    className="text-2xl font-bold text-gray-900 hover:text-indigo-600 transition-colors font-serif"
                                 >
                                     MC
                                 </button>
 
                                 {/* Navigation Links */}
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-8">
                                     {navItems.map((item) => (
                                         <button
                                             key={item.id}
                                             onClick={() => scrollToSection(item.id)}
-                                            className="text-xs font-medium text-gray-500 hover:text-indigo-600 transition-colors"
+                                            className="text-base font-medium text-gray-500 hover:text-indigo-600 transition-colors"
                                         >
                                             {item.label}
                                         </button>

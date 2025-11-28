@@ -15,7 +15,7 @@ const experiences = [
             'Shipped Antigravity within 4 months of joining Google Deepmind',
             'Developed and maintained the agentic harness for Antigravity.',
             'Managed the models\' limited context and attention windows using a variety of context engineering techniques.',
-            'Built and maintained the key agent metrics that enable us to evaluate new capabilities and hillclimb on them.',
+            'Built and maintained the key agent metrics that enable us to evaluate new capabilities and improve them.',
             'Collaborated with the research teams to train Gemini to maximize the features of Antigravity.'
         ],
         images: [],
@@ -32,7 +32,7 @@ const experiences = [
         period: '2024 - 2025',
         logo: '/img/windsurf_logo.png',
         color: 'windsurf',
-        summary: 'Windsurf (formerly Codeium) was my first software engineering job and holds a special place in my heart. I started here as an intern after making my transition into software! Windsurf is where I learned everything I know about building production-grade software, agents, LLM serving infrastructure, and software eval/metrics. It was my first exposure to software at scale and I loved every bit of it... right up until we joined Google Deepmind.',
+        summary: 'Windsurf (formerly Codeium) was my first software engineering job and holds a special place in my heart. I started here as an intern after making my transition into software! Windsurf is where I learned everything I know about building production-grade software, agents, LLM serving infrastructure, and software eval/metrics. It was my first exposure to software at scale and I loved every bit of it.',
         highlights: [
             'Wrote the first system prompt for Cascade, the coding agent embedded within the IDE.',
             'Developed the first code writing and editing tools for Cascade.',
@@ -101,7 +101,7 @@ const experiences = [
         summary: 'My PhD research was in photonic integrated circuits to process extremely wideband wireless/RF signals. This was a field known as microwave photonics/RF photonics, and would later lay the foundations for joining both Apple and Luminous Computing.',
         highlights: [
             (<>My PhD thesis: <a href="http://arks.princeton.edu/ark:/88435/dsp01c821gn289" target="_blank" rel="noopener noreferrer" className="text-orange-600 font-medium hover:text-orange-700 underline decoration-orange-300 hover:decoration-orange-600 underline-offset-2 transition-colors inline-flex items-center gap-1">A Microwave Photonic Interference Canceller: Architectures, Systems, and Integration<svg className="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></a></>),
-            (<>I haven't cared about publishing since graduate school, but it's fun to see that people are still citing my papers (though I do wonder how many have actually read them)! <a href="https://scholar.google.com/citations?hl=en&user=jJyxJ48AAAAJ" target="_blank" rel="noopener noreferrer" className="text-orange-600 font-medium hover:text-orange-700 underline decoration-orange-300 hover:decoration-orange-600 underline-offset-2 transition-colors inline-flex items-center gap-1">Almost 1000 citations with an h-index of 16<svg className="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>.</>),
+            (<>I haven't cared about publishing since graduate school, but it's fun to see that people are still citing my papers (though I do wonder how many have actually read them)! <a href="https://scholar.google.com/citations?hl=en&user=jJyxJ48AAAAJ" target="_blank" rel="noopener noreferrer" className="text-orange-600 font-medium hover:text-orange-700 underline decoration-orange-300 hover:decoration-orange-600 underline-offset-2 transition-colors inline-flex items-center gap-1">Almost 1,000 citations with an h-index of 16<svg className="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>.</>),
             'My research became the foundational technology behind Rebeless Inc, a startup I co-founded with my advisor after graduate school that unfortunately never got funding... but it was a great experience!'
         ],
         images: [],
